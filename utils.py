@@ -34,7 +34,7 @@ class RLLibWrapper(gym.core.Wrapper, MultiAgentEnv):
 
     def step(self, action):
         obs, reward, done, info = self.env.step(action)
-        reward = self._shape_reward(reward, info)
+        # reward = self._shape_reward(reward, info)
         return obs, reward, done, info
 
     def _shape_reward(self, reward, info):

@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=pfsp_soccer
-#SBATCH --output=logs/pfsp_%j.out
-#SBATCH --error=logs/pfsp_%j.err
+#SBATCH --job-name=ppo_soccer
+#SBATCH --output=logs/ppo_%j.out
+#SBATCH --error=logs/ppo_%j.err
 #SBATCH --time=06:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16

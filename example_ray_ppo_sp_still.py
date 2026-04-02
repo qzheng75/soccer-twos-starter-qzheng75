@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     analysis = tune.run(
         "PPO",
-        name="PPO_SP",
+        name="PPO_SP_SIMPLE_REWARD",
         config={
             # system settings
             "num_gpus": 0,
@@ -41,8 +41,8 @@ if __name__ == "__main__":
             "train_batch_size": 12000,
         },
         stop={
-            "timesteps_total": 20000000,  # 15M
-            # "time_total_s": 14400, # 4h
+            # "timesteps_total": 20000000,  # 15M
+            "time_total_s": 14400, # 4h
         },
         checkpoint_freq=100,
         checkpoint_at_end=True,
